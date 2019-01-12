@@ -1,0 +1,3 @@
+let rec fn i k =
+    if i = 0 then k else fn (i / 2) (k + i % 2)
+fn (int <| stdin.ReadLine()) 0 |> printfn "%i"
